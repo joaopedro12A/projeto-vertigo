@@ -4,34 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Vertigo</title>
 </head>
 <body>
+    <div class="conteudo">
+
     <header>
-        <img src="./logo.svg" alt="Logo">
+        <img src="./logo.svg" alt="Logo do Vertigo">
     </header>
 
     <main>
-        <section class="descrição">
+        <section class="descricao">
             <h1>Acesse a plataforma</h1>
-
             <p>Faça login ou registre-se para começar a construir seus projetos ainda hoje.</p>
         </section>
 
         <section class="login">
-            <form action="">
+            <form action="#" method="post">
                 <div class="input-box">
                     <label for="email">E-mail</label>
-                    <input type="email" placeholder="Digite seu e-mail" id="E-mail">
-                </div>
-                <div class="input-box">
-                    <label for="senha">Senha</label>
-                    <p>Esqueceu a senha?</p>
-                    <input type="password" placeholder="Digite sua senha" id="senha">
+                    <input type="email" placeholder="Digite seu e-mail" id="email" required>
                 </div>
                 
+                <div class="input-box">
+                    <div class="label-group">
+                        <label for="senha">Senha</label>
+                        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                    </div>
+                    <input type="password" placeholder="Digite sua senha" id="senha" required>
+                </div>
+
+                <button type="submit">Entrar</button>
+                <p class="register-text">Ainda não tem uma conta? <a href="#">Inscreva-se</a></p>
             </form>
         </section>
     </main>
+    </div>
+    <div class="bg-desktop">
+       <img src="./Imagens/Rectangle 1.png" alt="background desktop">
+    </div>
 </body>
 </html>
